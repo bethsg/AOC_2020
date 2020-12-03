@@ -18,4 +18,23 @@ while(not flag):
             break
     
 
+#In[3]
+arr0 = expense_report
+arr1 = arr0
+arr2 = arr1
+flag = False
+
+while(not flag):
+    arrO = arr1
+    arr1 = arr1[1:]
+    arr2 = arr1[1:]
+    for i in arr1:
+        for j in arr2:
+            if arr0[0] + i + j == 2020:
+                print(arr0[0]*i*j)
+                flag = True
+            if flag:
+                break
+        if flag:
+            break
 # %%
