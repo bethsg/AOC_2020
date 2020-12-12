@@ -40,7 +40,7 @@ def bags_in(key):
         for bag in bagdict[key]:
             total = total + int(bag[1])*bags_in(bag[0])
         return total + 1
-print(bags_in("shiny gold"))
+print(bags_in("shiny gold")-1)
 
 # %%
 a, b = (1,2)
